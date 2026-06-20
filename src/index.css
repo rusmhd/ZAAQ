@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #09090C;
+    color: #F5F4F0;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  ::selection {
+    background-color: #3D1A5C;
+    color: #F5F4F0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090C;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3D1A5C;
+    border: 2px solid #09090C;
+    border-radius: 999px;
+  }
+
+  :focus-visible {
+    outline: 2px solid #C9A8C2;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .snap-root {
+    height: 100svh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overscroll-behavior-y: auto;
+  }
+
+  .snap-section {
+    min-height: 100svh;
+  }
+
+  .snap-row {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .snap-col {
+    min-width: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .snap-root {
+      scroll-behavior: auto;
+    }
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.7rem;
+  }
+
+  .vrule {
+    width: 1px;
+    align-self: stretch;
+    background-color: currentColor;
+    opacity: 0.35;
+  }
+
+  .corner-mark {
+    width: 1.1rem;
+    height: 1.1rem;
+    opacity: 0.55;
+  }
+}
