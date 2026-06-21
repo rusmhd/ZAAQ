@@ -25,10 +25,10 @@ export default function OrderGuide() {
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_0.82fr] lg:items-end">
           <blockquote className="max-w-4xl font-display text-4xl font-light leading-[1.08] tracking-[0.03em] sm:text-6xl lg:text-7xl">
-            "Beyond borrowed names — six scents that are distinctly yours."
+            "Beyond borrowed names: six scents that are distinctly yours."
           </blockquote>
 
-          <p className="max-w-md font-sans text-base leading-[1.85] text-cream/62 lg:justify-self-end">
+          <p className="max-w-md font-display text-base leading-[1.85] text-cream/62 lg:justify-self-end">
             Shopping stays in the background. Select your fragrances, review them once, and send the order through WhatsApp when you are ready.
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function OrderGuide() {
               >
                 <div className="flex items-center justify-between">
                   <Icon size={20} strokeWidth={1.25} className="text-plum-mist" />
-                  <span className="font-mono text-xs text-cream/35">0{index + 1}</span>
+                  <span className="font-display text-xs text-cream/35">0{index + 1}</span>
                 </div>
                 <h3 className="mt-12 font-display text-2xl font-light tracking-[0.04em]">{step.label}</h3>
                 <p className="mt-4 text-sm leading-[1.8] text-cream/55">{step.text}</p>
