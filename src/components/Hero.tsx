@@ -35,13 +35,13 @@ export default function Hero({ onNavigate }: HeroProps) {
           </h1>
 
           <div className="mt-8 flex flex-col items-start gap-8 sm:flex-row sm:items-end sm:justify-between">
-            <p className="max-w-md font-sans text-base leading-relaxed text-cream/76 sm:text-lg">
+            <p className="max-w-md font-display text-base leading-relaxed text-cream/76 sm:text-lg">
               A luxury fragrance collection built around identity, restraint, and long-lasting presence.
             </p>
 
             <button
               onClick={() => onNavigate('scents')}
-              className="group flex items-center gap-3 bg-plum px-7 py-4 font-mono text-xs uppercase tracking-widest2 text-cream transition-colors duration-300 hover:bg-cream hover:text-ink"
+              className="group flex items-center gap-3 bg-plum px-7 py-4 font-display text-xs uppercase tracking-widest2 text-cream transition-colors duration-300 hover:bg-cream hover:text-ink"
             >
               Explore collection
               <ArrowDown size={14} className="transition-transform duration-300 group-hover:translate-y-0.5" />
