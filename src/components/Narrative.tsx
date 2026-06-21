@@ -49,7 +49,7 @@ export default function Narrative() {
             viewport={{ once: true, amount: 0.4 }}
             variants={fadeUp}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-8 max-w-xl font-sans text-base leading-[1.9] text-cream/66 sm:text-lg"
+            className="mt-8 max-w-xl font-display text-base leading-[1.9] text-cream/66 sm:text-lg"
           >
             ZAAQ is built as a quiet luxury fragrance house: clear identities, balanced notes, and a minimal visual language that lets each perfume speak with restraint.
           </motion.p>
