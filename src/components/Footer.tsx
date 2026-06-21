@@ -1,6 +1,7 @@
 import { Instagram, MessageCircle, Globe } from 'lucide-react';
 import { sections } from '../data/sections';
 import SectionMark from './SectionMark';
+import zaaqLogo from '../assets/zaaq-logo.png';
 
 interface FooterProps {
   onNavigate: (id: string) => void;
@@ -20,7 +21,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <br />
             made personal.
           </h2>
-          <p className="max-w-md font-sans text-base leading-[1.85] text-cream/58 lg:justify-self-end">
+          <p className="max-w-md font-display text-base leading-[1.85] text-cream/58 lg:justify-self-end">
             For orders and enquiries, send your selected fragrances through WhatsApp and the ZAAQ team will continue from there.
           </p>
         </div>
@@ -30,7 +31,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             href="https://wa.me/917034550886"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center gap-3 bg-plum px-7 py-4 font-mono text-xs uppercase tracking-widest2 text-cream transition-colors duration-300 hover:bg-cream hover:text-ink"
+            className="flex items-center justify-center gap-3 bg-plum px-7 py-4 font-display text-xs uppercase tracking-widest2 text-cream transition-colors duration-300 hover:bg-cream hover:text-ink"
           >
             <MessageCircle size={15} /> WhatsApp
           </a>
@@ -38,7 +39,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             href="https://zaaq.ae"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center gap-3 border border-cream/18 px-7 py-4 font-mono text-xs uppercase tracking-widest2 text-cream/72 transition-colors duration-300 hover:border-cream hover:text-cream"
+            className="flex items-center justify-center gap-3 border border-cream/18 px-7 py-4 font-display text-xs uppercase tracking-widest2 text-cream/72 transition-colors duration-300 hover:border-cream hover:text-cream"
           >
             <Globe size={15} /> zaaq.ae
           </a>
@@ -47,8 +48,8 @@ export default function Footer({ onNavigate }: FooterProps) {
 
       <div className="mx-auto mt-20 flex w-full max-w-7xl flex-col gap-10 border-t border-cream/12 pt-10 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="font-display text-2xl font-light tracking-[0.24em]">ZAAQ</p>
-          <p className="mt-3 font-mono text-xs uppercase tracking-widest2 text-cream/42">United Arab Emirates</p>
+          <img src={zaaqLogo} alt="ZAAQ" className="h-5 w-auto" />
+          <p className="mt-3 font-display text-xs uppercase tracking-widest2 text-cream/42">United Arab Emirates</p>
         </div>
 
         <nav className="flex flex-wrap gap-x-8 gap-y-3">
@@ -59,12 +60,12 @@ export default function Footer({ onNavigate }: FooterProps) {
           ))}
         </nav>
 
-        <a href="#" aria-label="ZAAQ on Instagram" className="text-cream/55 transition-colors hover:text-cream">
+        <a href="https://www.instagram.com/zaaq.ae/" target="_blank" rel="noreferrer" aria-label="ZAAQ on Instagram" className="text-cream/55 transition-colors hover:text-cream">
           <Instagram size={18} />
         </a>
       </div>
 
-      <p className="mx-auto mt-10 w-full max-w-7xl font-mono text-[0.65rem] text-cream/30">© 2026 ZAAQ. Your Signature in Scent.</p>
+      <p className="mx-auto mt-10 w-full max-w-7xl font-display text-[0.65rem] text-cream/30">© 2026 ZAAQ. Your Signature in Scent.</p>
     </footer>
   );
 }
