@@ -19,7 +19,7 @@ export default function Pillars() {
             <br />
             One signature.
           </h2>
-          <p className="max-w-md font-sans text-base leading-relaxed text-cream/58">
+          <p className="max-w-md font-display text-base leading-relaxed text-cream/58">
             Identity, craft, longevity, and minimalism guide every bottle, note, and gesture.
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function Pillars() {
               >
                 <div className="flex items-center justify-between">
                   <Icon size={20} strokeWidth={1.25} className="text-plum-mist" />
-                  <span className="font-mono text-xs text-cream/30">{p.index}</span>
+                  <span className="font-display text-xs text-cream/30">{p.index}</span>
                 </div>
                 <h3 className="mt-12 font-display text-2xl font-light tracking-[0.04em]">{p.name}</h3>
                 <p className="mt-5 text-sm leading-[1.8] text-cream/58">{p.line}</p>
