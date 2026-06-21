@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, ShoppingBag, X } from 'lucide-react';
 import { sections } from '../data/sections';
+import zaaqLogo from '../assets/zaaq-logo.png';
 
 interface NavbarProps {
   active: string;
@@ -27,8 +28,8 @@ export default function Navbar({ active, scrolled, cartCount, onNavigate }: Navb
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-10">
-        <button onClick={() => handleNavigate('home')} className="font-display text-xl font-light tracking-[0.24em]" aria-label="ZAAQ - back to top">
-          ZAAQ
+        <button onClick={() => handleNavigate('home')} className="flex items-center" aria-label="ZAAQ - back to top">
+          <img src={zaaqLogo} alt="ZAAQ" className="h-4 w-auto sm:h-[1.1rem]" />
         </button>
 
         <nav className="hidden items-center gap-9 md:flex">
@@ -55,7 +56,7 @@ export default function Navbar({ active, scrolled, cartCount, onNavigate }: Navb
           >
             <ShoppingBag size={16} />
             {cartCount > 0 && (
-              <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-plum px-1 font-mono text-[0.62rem] font-semibold leading-none text-cream">
+              <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-plum px-1 font-display text-[0.62rem] font-semibold leading-none text-cream">
                 {cartCount}
               </span>
             )}
