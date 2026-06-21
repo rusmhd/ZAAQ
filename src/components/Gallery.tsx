@@ -17,7 +17,7 @@ export default function Gallery() {
     >
       <div className="relative z-10 px-6 pt-28 sm:px-10">
         <div className="mx-auto max-w-7xl">
-          <SectionMark eyebrow="On Location — Dubai" arrow="up-right" />
+          <SectionMark eyebrow="On Location: United Arab Emirates" arrow="up-right" />
         </div>
       </div>
 
@@ -35,8 +35,8 @@ export default function Gallery() {
           <p className="max-w-xl font-display text-3xl font-light leading-tight sm:text-4xl">
             Worn quietly. Noticed anyway.
           </p>
-          <p className="mt-3 font-mono text-xs uppercase tracking-widest2 text-cream/50">
-            Campaign, 2026 — Dubai
+          <p className="mt-3 font-display text-xs uppercase tracking-widest2 text-cream/50">
+            Campaign, 2026: United Arab Emirates
           </p>
         </div>
       </div>
