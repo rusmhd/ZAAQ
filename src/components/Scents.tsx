@@ -25,7 +25,7 @@ function CartToast({ name, visible }: { name: string; visible: boolean }) {
         >
           <div className="flex items-center gap-3 rounded-full bg-cream px-5 py-3 shadow-2xl">
             <Check size={14} className="text-plum" />
-            <span className="font-mono text-xs uppercase tracking-widest text-ink">{name} added</span>
+            <span className="font-display text-xs uppercase tracking-widest text-ink">{name} added</span>
           </div>
         </motion.div>
       )}
@@ -124,8 +124,8 @@ function ScentCard({
 
         {/* Notes overlay — slides up on hover */}
         <div className="absolute bottom-0 left-0 right-0 z-20 translate-y-full bg-ink/90 px-5 py-4 backdrop-blur-sm transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0">
-          <p className="font-mono text-[0.6rem] uppercase tracking-widest2 text-plum-mist">Fragrance notes</p>
-          <p className="mt-1.5 font-mono text-[0.68rem] uppercase tracking-widest2 leading-relaxed text-cream/72">{s.notes}</p>
+          <p className="font-display text-[0.6rem] uppercase tracking-widest2 text-plum-mist">Fragrance notes</p>
+          <p className="mt-1.5 font-display text-[0.68rem] uppercase tracking-widest2 leading-relaxed text-cream/72">{s.notes}</p>
         </div>
       </div>
 
@@ -133,19 +133,19 @@ function ScentCard({
       <div className="relative z-10 border-t border-cream/10 bg-ink/72 p-6 backdrop-blur-md" style={{ transform: 'translateZ(0)' }}>
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="font-mono text-[0.62rem] uppercase tracking-widest2 text-cream/35">No. {s.index}</p>
+            <p className="font-display text-[0.62rem] uppercase tracking-widest2 text-cream/35">No. {s.index}</p>
             <h3 className="mt-3 font-display text-3xl font-light tracking-[0.05em]">{s.name}</h3>
           </div>
-          <p className="font-mono text-[0.6rem] uppercase tracking-widest text-plum-mist">30 ml</p>
+          <p className="font-display text-[0.6rem] uppercase tracking-widest text-plum-mist">30 ml</p>
         </div>
 
-        <p className="mt-4 min-h-12 font-sans text-sm leading-[1.7] text-cream/62">{s.line}</p>
+        <p className="mt-4 min-h-12 font-display text-sm leading-[1.7] text-cream/62">{s.line}</p>
 
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           {/* Primary CTA — diagonal sweep fill */}
           <button
             onClick={onAdd}
-            className="group/btn relative flex flex-1 items-center justify-center gap-3 overflow-hidden bg-plum px-5 py-3 font-mono text-xs uppercase tracking-widest2 text-cream"
+            className="group/btn relative flex flex-1 items-center justify-center gap-3 overflow-hidden bg-plum px-5 py-3 font-display text-xs uppercase tracking-widest2 text-cream"
           >
             <span className="absolute inset-0 translate-x-[-101%] bg-cream transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover/btn:translate-x-0" />
             <span className="relative z-10 flex items-center gap-3 transition-colors duration-200 group-hover/btn:text-ink">
@@ -164,7 +164,7 @@ function ScentCard({
                 exit={{ opacity: 0, width: 0, paddingLeft: 0, paddingRight: 0 }}
                 transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
                 onClick={onViewCart}
-                className="overflow-hidden border border-cream/16 py-3 font-mono text-xs uppercase tracking-widest2 text-cream/70 transition-colors duration-300 hover:border-cream hover:bg-cream hover:text-ink"
+                className="overflow-hidden border border-cream/16 py-3 font-display text-xs uppercase tracking-widest2 text-cream/70 transition-colors duration-300 hover:border-cream hover:bg-cream hover:text-ink"
               >
                 Cart
               </motion.button>
@@ -202,7 +202,7 @@ export default function Scents({ cartItems, onAddToCart, onViewCart }: ScentsPro
               composed with restraint.
             </h2>
           </div>
-          <p className="max-w-md font-sans text-base leading-[1.8] text-cream/58 lg:justify-self-end">
+          <p className="max-w-md font-display text-base leading-[1.8] text-cream/58 lg:justify-self-end">
             Each fragrance is treated like a signature: simple at first glance, layered when it stays with you.
           </p>
         </div>
