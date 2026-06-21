@@ -65,14 +65,14 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                   <br />
                   Send directly.
                 </h2>
-                <p className="mt-5 max-w-xl font-sans text-base leading-[1.8] text-ink/58">
+                <p className="mt-5 max-w-xl font-display text-base leading-[1.8] text-ink/58">
                   Your fragrance list opens in WhatsApp with the message already prepared for the ZAAQ team.
                 </p>
               </div>
 
               <button
                 onClick={() => onNavigate('scents')}
-                className="flex items-center gap-2 border border-ink/12 px-5 py-3 font-mono text-xs uppercase tracking-widest2 text-ink/64 transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-cream"
+                className="flex items-center gap-2 border border-ink/12 px-5 py-3 font-display text-xs uppercase tracking-widest2 text-ink/64 transition-colors duration-300 hover:border-ink hover:bg-ink hover:text-cream"
               >
                 <ArrowLeft size={14} /> Shop
               </button>
@@ -83,7 +83,7 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                 <div className="bg-mist p-8">
                   <ShoppingBag size={22} className="text-plum" />
                   <p className="mt-5 font-display text-2xl font-light">Your cart is waiting for a signature.</p>
-                  <p className="mt-3 max-w-md font-sans text-sm leading-relaxed text-ink/58">
+                  <p className="mt-3 max-w-md font-display text-sm leading-relaxed text-ink/58">
                     Add a fragrance from the collection, then send your order through WhatsApp.
                   </p>
                 </div>
@@ -95,9 +95,9 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                     </div>
 
                     <div className="min-w-0">
-                      <p className="font-mono text-[0.62rem] uppercase tracking-widest2 text-plum">30 ml Eau de Parfum</p>
+                      <p className="font-display text-[0.62rem] uppercase tracking-widest2 text-plum">30 ml Eau de Parfum</p>
                       <h3 className="mt-2 font-display text-3xl font-light tracking-[0.04em]">{item.name}</h3>
-                      <p className="mt-3 font-mono text-xs uppercase tracking-widest2 leading-relaxed text-ink/48">{item.notes}</p>
+                      <p className="mt-3 font-display text-xs uppercase tracking-widest2 leading-relaxed text-ink/48">{item.notes}</p>
                     </div>
 
                     <div className="flex items-center justify-between gap-5 sm:flex-col sm:items-end">
@@ -105,13 +105,13 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                         <button onClick={() => onUpdateQuantity(item.id, item.quantity - 1)} className="grid h-11 w-11 place-items-center text-ink/65 transition-colors hover:bg-ink hover:text-cream" aria-label={`Decrease ${item.name} quantity`}>
                           <Minus size={14} />
                         </button>
-                        <span className="grid h-11 min-w-10 place-items-center font-mono text-xs text-ink">{item.quantity}</span>
+                        <span className="grid h-11 min-w-10 place-items-center font-display text-xs text-ink">{item.quantity}</span>
                         <button onClick={() => onUpdateQuantity(item.id, item.quantity + 1)} className="grid h-11 w-11 place-items-center text-ink/65 transition-colors hover:bg-ink hover:text-cream" aria-label={`Increase ${item.name} quantity`}>
                           <Plus size={14} />
                         </button>
                       </div>
 
-                      <button onClick={() => onUpdateQuantity(item.id, 0)} className="flex items-center gap-2 font-mono text-[0.65rem] uppercase tracking-widest text-ink/42 transition-colors hover:text-plum">
+                      <button onClick={() => onUpdateQuantity(item.id, 0)} className="flex items-center gap-2 font-display text-[0.65rem] uppercase tracking-widest text-ink/42 transition-colors hover:text-plum">
                         <Trash2 size={13} /> Remove
                       </button>
                     </div>
@@ -122,26 +122,26 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
           </div>
 
           <aside className="bg-ink p-6 text-cream lg:sticky lg:top-24">
-            <p className="font-mono text-[0.62rem] uppercase tracking-widest2 text-cream/45">Order details</p>
+            <p className="font-display text-[0.62rem] uppercase tracking-widest2 text-cream/45">Order details</p>
             <div className="mt-4 flex items-end justify-between border-b border-cream/10 pb-5">
               <span className="font-display text-3xl font-light">{itemCount}</span>
-              <span className="font-mono text-xs uppercase tracking-widest2 text-cream/45">item{itemCount === 1 ? '' : 's'}</span>
+              <span className="font-display text-xs uppercase tracking-widest2 text-cream/45">item{itemCount === 1 ? '' : 's'}</span>
             </div>
 
             <div className="mt-6 grid gap-5">
               <label className="grid gap-2">
-                <span className="font-mono text-[0.62rem] uppercase tracking-widest2 text-cream/45">Name optional</span>
-                <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" className="border-b border-cream/20 bg-transparent py-3 font-sans text-sm text-cream placeholder:text-cream/28 focus:border-cream focus:outline-none" />
+                <span className="font-display text-[0.62rem] uppercase tracking-widest2 text-cream/45">Name optional</span>
+                <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" className="border-b border-cream/20 bg-transparent py-3 font-display text-sm text-cream placeholder:text-cream/28 focus:border-cream focus:outline-none" />
               </label>
 
               <label className="grid gap-2">
-                <span className="font-mono text-[0.62rem] uppercase tracking-widest2 text-cream/45">Delivery address optional</span>
-                <textarea value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Area, building, phone alternate..." rows={3} className="resize-none border-b border-cream/20 bg-transparent py-3 font-sans text-sm leading-relaxed text-cream placeholder:text-cream/28 focus:border-cream focus:outline-none" />
+                <span className="font-display text-[0.62rem] uppercase tracking-widest2 text-cream/45">Delivery address optional</span>
+                <textarea value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Area, building, phone alternate..." rows={3} className="resize-none border-b border-cream/20 bg-transparent py-3 font-display text-sm leading-relaxed text-cream placeholder:text-cream/28 focus:border-cream focus:outline-none" />
               </label>
 
               <label className="grid gap-2">
-                <span className="font-mono text-[0.62rem] uppercase tracking-widest2 text-cream/45">Notes optional</span>
-                <textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Gift wrap, delivery timing, or questions" rows={3} className="resize-none border-b border-cream/20 bg-transparent py-3 font-sans text-sm leading-relaxed text-cream placeholder:text-cream/28 focus:border-cream focus:outline-none" />
+                <span className="font-display text-[0.62rem] uppercase tracking-widest2 text-cream/45">Notes optional</span>
+                <textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Gift wrap, delivery timing, or questions" rows={3} className="resize-none border-b border-cream/20 bg-transparent py-3 font-display text-sm leading-relaxed text-cream placeholder:text-cream/28 focus:border-cream focus:outline-none" />
               </label>
             </div>
 
@@ -152,7 +152,7 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                 window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
                 setTimeout(() => setShowFallback(true), 2000);
               }}
-              className={`mt-8 flex w-full items-center justify-center gap-3 px-6 py-4 font-mono text-xs uppercase tracking-widest2 transition-colors duration-300 ${items.length === 0 ? 'cursor-not-allowed bg-cream/10 text-cream/30' : 'bg-plum text-cream hover:bg-cream hover:text-ink'}`}
+              className={`mt-8 flex w-full items-center justify-center gap-3 px-6 py-4 font-display text-xs uppercase tracking-widest2 transition-colors duration-300 ${items.length === 0 ? 'cursor-not-allowed bg-cream/10 text-cream/30' : 'bg-plum text-cream hover:bg-cream hover:text-ink'}`}
             >
               Send order via WhatsApp
               <Send size={14} />
@@ -165,7 +165,7 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                   onClick={() => setShowFallback(false)}
                   className="flex w-full items-center justify-between"
                 >
-                  <span className="font-mono text-[0.6rem] uppercase tracking-widest2 text-cream/50">
+                  <span className="font-display text-[0.6rem] uppercase tracking-widest2 text-cream/50">
                     WhatsApp not opening?
                   </span>
                   <ChevronDown size={13} className="text-cream/40" />
@@ -177,7 +177,7 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                     href={whatsappWebUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center justify-between border border-cream/14 bg-cream/[0.05] px-4 py-3 font-mono text-[0.65rem] uppercase tracking-widest text-cream/70 transition-colors hover:border-cream/30 hover:text-cream"
+                    className="flex items-center justify-between border border-cream/14 bg-cream/[0.05] px-4 py-3 font-display text-[0.65rem] uppercase tracking-widest text-cream/70 transition-colors hover:border-cream/30 hover:text-cream"
                   >
                     Open WhatsApp Web directly
                     <ExternalLink size={12} className="shrink-0" />
@@ -186,11 +186,11 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                   {/* Copy order to clipboard */}
                   <button
                     onClick={handleCopy}
-                    className="flex items-center justify-between border border-cream/14 bg-cream/[0.05] px-4 py-3 font-mono text-[0.65rem] uppercase tracking-widest text-cream/70 transition-colors hover:border-cream/30 hover:text-cream"
+                    className="flex items-center justify-between border border-cream/14 bg-cream/[0.05] px-4 py-3 font-display text-[0.65rem] uppercase tracking-widest text-cream/70 transition-colors hover:border-cream/30 hover:text-cream"
                   >
                     {copied ? (
                       <>
-                        <span className="text-plum-mist">Copied — paste into WhatsApp</span>
+                        <span className="text-plum-mist">Copied, paste into WhatsApp</span>
                         <Check size={12} className="shrink-0 text-plum-mist" />
                       </>
                     ) : (
@@ -202,7 +202,7 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                   </button>
                 </div>
 
-                <p className="mt-3 font-mono text-[0.58rem] leading-relaxed text-cream/32">
+                <p className="mt-3 font-display text-[0.58rem] leading-relaxed text-cream/32">
                   Open WhatsApp, start a chat with +91 70345 50886, and paste your order.
                 </p>
               </div>
