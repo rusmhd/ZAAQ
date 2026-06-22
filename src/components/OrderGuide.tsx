@@ -45,7 +45,7 @@ export default function OrderGuide() {
                 whileInView="visible"
                 viewport={{ once: true, margin: '-40px' }}
                 whileHover={{ y: -4, transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] } }}
-                className="border border-cream/12 bg-cream/[0.035] p-7 transition-colors duration-300 hover:border-cream/24 hover:bg-cream/[0.06]"
+                className="group border border-cream/12 bg-cream/[0.035] p-7 transition-colors duration-300 hover:border-cream/24 hover:bg-cream/[0.06]"
               >
                 <div className="flex items-center justify-between">
                   <Icon size={20} strokeWidth={1.25} className="text-plum-mist" />
