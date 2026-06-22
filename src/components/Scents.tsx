@@ -208,7 +208,7 @@ export default function Scents({ cartItems, onAddToCart, onViewCart }: ScentsPro
         </div>
 
         <div className="mt-16 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {scents.map((s, i) => (
+          {scents.map((s) => (
             <ScentCard
               key={s.index}
               s={s}
