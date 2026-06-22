@@ -28,7 +28,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
         <div className="mt-16 flex flex-col gap-4 sm:flex-row">
           <a
-            href="https://wa.me/917034550886"
+            href="https://wa.me/971503142399"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-3 bg-plum px-7 py-4 font-display text-xs uppercase tracking-widest2 text-cream transition-colors duration-300 hover:bg-cream hover:text-ink"
