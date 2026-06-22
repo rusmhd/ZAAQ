@@ -14,7 +14,7 @@
   body {
     background-color: #09090C;
     color: #F5F4F0;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
   }
 
   ::selection {
@@ -68,7 +68,7 @@
   }
 
   .eyebrow {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Jost', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.28em;
     font-size: 0.7rem;
