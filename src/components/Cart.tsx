@@ -203,7 +203,7 @@ export default function Cart({ items, onUpdateQuantity, onNavigate }: CartProps)
                 </div>
 
                 <p className="mt-3 font-display text-[0.58rem] leading-relaxed text-cream/32">
-                  Open WhatsApp, start a chat with +91 70345 50886, and paste your order.
+                  Open WhatsApp, start a chat with +971 50 314 2399, and paste your order.
                 </p>
               </div>
             )}
